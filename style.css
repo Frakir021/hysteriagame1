@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+  }
+  .video-wrapper {
+    border: 2px solid #000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .kenjiShadow4{
+    position: absolute;
+    transform: scale(0.8);
+    animation: circleMotion 6s linear infinite;
+  }
+.splatter2{
+    position: absolute;
+    transform: scale(0.8);
+    animation: circleMotion3 4s  linear infinite;
+    animation-delay: 1s;
+    
+}
+.kenjiShadow3{
+    position: absolute;
+    transform: scale(0.8);
+    animation: circleMotion2 3s linear infinite;
+    
+}
+.kenji{
+    position: absolute;
+    transform: scale(0.8);
+    
+}
+.splatter{
+    position: absolute;
+    transform: scale(0.8);
+    animation: circleMotion3 3s linear infinite;
+    
+}
+
+
+
+
+
+
+
+
+.Illustration40{
+    position: absolute;
+    transform: scale(0.8);
+    
+   
+}
+
+.shadow2{
+    position: absolute;
+    transform: scale(0.8) translateX(-90px);
+ 
+}
+
+
+
+
+.menuBG{
+    position: absolute;
+    transform: scale(0.8);
+    
+}
+
+.menuButtons{
+    position: absolute;
+    transform: scale(0.8);
+    
+   
+}
+
+
+.menuText {
+    position: absolute;
+    transform: scale(0.8);
+    width: 500px;
+    height: 510px;
+    top: -30px;
+    left: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menuButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    margin-bottom: 10px; /* Adds space between buttons */
+    cursor: pointer;
+}
+
+.menuButtonHover {
+    background-image: url(animation/menu/menuhover.png);
+    width: 611px;
+    height: 83px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.menuButtonText {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+.b1 {
+    background-image: url(animation/menu/1.png);
+    width: 611px;
+    height: 83px;
+}
+
+.b2 {
+    background-image: url(animation/menu/2.png);
+    width: 611px;
+    height: 83px;
+}
+
+.b3 {
+    background-image: url(animation/menu/3.png);
+    width: 611px;
+    height: 83px;
+}
+
+.b4 {
+    background-image: url(animation/menu/4.png);
+    width: 440px;
+    height: 83px;
+}
+
+.b5 {
+    background-image: url(animation/menu/5.png);
+    width: 440px;
+    height: 83px;
+}
+
+.b6 {
+    background-image: url(animation/menu/6.png);
+    width: 440px;
+    height: 83px;
+}
+
+.menuButton:hover .menuButtonHover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.textContainer{
+    width: 700px;
+    height: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(53deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.743942645417542) 0%, rgba(0,212,255,0) 100%);
+    position: absolute;
+    bottom: 120px;
+    right: 90px;
+    color:white;
+    font-size: 40px;
+    text-align: left;
+    padding: 5px 40px;
+    text-shadow: 3px -3px 1px black ;
+    
+}
+
+
+.menuButtonText {
+    position: absolute;
+    left: 40px;
+    top: 27px;
+    animation: blinkCrazy 0.1s infinite alternate, blinkChaos 0.12s infinite alternate;
+}
+
+@keyframes blinkCrazy {
+    0% { filter: brightness(100%); }
+    25% { filter: brightness(180%); } /* Very bright */
+    50% { filter: brightness(50%); }  /* Very dark */
+    75% { filter: brightness(160%); } /* Brighter */
+    100% { filter: brightness(60%); } /* Darker */
+}
+
+@keyframes blinkChaos {
+    0% { filter: brightness(90%); }
+    50% { filter: brightness(140%); }
+    100% { filter: brightness(70%); }
+}
+
+@keyframes circleMotion {
+    0% {
+        transform: translateX(0) translateY(0) scale(0.8);
+    }
+    25% {
+        transform: translateX(5px) translateY(-5px) scale(0.8);
+    }
+    50% {
+        transform: translateX(0px) translateY(-10px) scale(0.8);
+    }
+    75% {
+        transform: translateX(-5px) translateY(-5px) scale(0.8);
+    }
+    100% {
+        transform: translateX(0) translateY(0) scale(0.8);
+    }
+}
+
+@keyframes circleMotion2 {
+    0% {
+        transform: translateX(0) translateY(0) scale(0.8);
+    }
+    25% {
+        transform: translateX(5px) translateY(-5px) scale(0.8);
+    }
+    50% {
+        transform: translateX(0px) translateY(-10px) scale(0.8);
+    }
+    75% {
+        transform: translateX(-5px) translateY(-5px) scale(0.8);
+    }
+    100% {
+        transform: translateX(0) translateY(0) scale(0.8);
+    }
+}
+
+@keyframes circleMotion3 {
+    0% {
+        transform: translateX(0) translateY(0) scale(0.8);
+    }
+    25% {
+        transform: translateX(5px) translateY(-5px) scale(0.8);
+    }
+    50% {
+        transform: translateX(0px) translateY(-10px) scale(0.8);
+    }
+    75% {
+        transform: translateX(-5px) translateY(-5px) scale(0.8);
+    }
+    100% {
+        transform: translateX(0) translateY(0) scale(0.8);
+    }
+}
+
+
+/* @media (min-width: 2560px) {
+    .kenji, .splatter, .kenjiShadow3, .kenjiShadow4, .splatter2, .Illustration40, .shadow2 {
+        transform: scale(1.4);
+    }
+} */
